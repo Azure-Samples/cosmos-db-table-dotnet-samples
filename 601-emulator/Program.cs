@@ -1,5 +1,4 @@
 ﻿// <imports>
-using Azure;
 using Azure.Data.Tables;
 // </imports>
 

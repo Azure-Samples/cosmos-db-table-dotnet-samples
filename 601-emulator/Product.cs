@@ -1,8 +1,5 @@
 // <entity>
-using Azure;
-using Azure.Data.Tables;
-
-public record Product : ITableEntity
+public record Product : Azure.Data.Tables.ITableEntity
 {
     public required string RowKey { get; set; }
 
@@ -10,7 +7,7 @@ public record Product : ITableEntity
 
     public required string Name { get; init; }
 
-    public ETag ETag { get; set; }
+    public Azure.ETag ETag { get; set; }
 
     public DateTimeOffset? Timestamp { get; set; }
 }
