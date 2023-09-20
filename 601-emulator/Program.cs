@@ -1,1 +1,3 @@
-﻿Console.WriteLine("placeholder");
+﻿using Azure.Data.Tables;
+
+var client = new TableServiceClient("");
